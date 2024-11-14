@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <base href="/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Demonstration for nasa-search">
+  <meta name="Description" content="Demonstration for nasa-search" />
+  <title>nasa-search</title>
 
   <style>
     :root, html, body {
@@ -29,16 +29,18 @@
       color: var(--ddd-primary-17);
     }
   </style>
-  <title>nasa-search</title>
 </head>
 
 <body>
   <div id="demo">
-    <h1>nasa-search</h1>
-    <!-- this is going to do whatever the tag's defaults are -->
-    <h2>Default</h2>
-    <nasa-search></nasa-search>
+    <h1>NASA Image Search Demo</h1>
+    <h2>Search for NASA Images</h2>
+    <!-- This nasa-search component will display the NASA images based on search criteria -->
+    <nasa-search id="example" title="Search NASA Images" aria-label="Search NASA images using the search input">
+    </nasa-search>
   </div>
-  <script type="module" src="./nasa-search.js"></script>
+
+  <!-- Updated to load nasa-search from the /lib/ directory -->
+  <script type="module" src="./lib/nasa-search.js"></script>
 </body>
 </html>
